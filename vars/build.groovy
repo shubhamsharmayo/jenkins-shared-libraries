@@ -2,7 +2,7 @@ def call(String path=null){
     if(path!=null){
         sh """
         
-    export PATH= "${path}:$PATH"
+    export PATH="${path}:$PATH"
     npm install
 
      """
