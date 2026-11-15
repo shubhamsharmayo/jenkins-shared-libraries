@@ -1,5 +1,5 @@
 def call(String path=null){
-    if(!path==null){
+    if(path!=null){
         sh """
         
     export PATH= "${path}:$PATH"
@@ -8,6 +8,7 @@ def call(String path=null){
      """
     }else{
         echo "no Path Provided"
+        sh 'npm install'
     }
     
 }

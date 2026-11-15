@@ -1,5 +1,5 @@
 def call(String path=null, Integer port=3000, String name){
-    if(!path==null){
+    if(path!=null){
         sh """
 
         export PATH = "${path}:$PATH"
